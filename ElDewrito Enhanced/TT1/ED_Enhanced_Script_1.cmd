@@ -137,7 +137,7 @@ setfield textures[27].filename 360
 setfield textures[27].bitmap ui\images\snowbound.bitmap
 setfield textures[28].filename 500
 setfield textures[28].bitmap ui\images\spacecamp.bitmap
-setfield textures[29].filename 
+setfield textures[29].filename 900
 setfield textures[29].bitmap ui\images\village.bitmap
 setfield textures[30].filename 480
 setfield textures[30].bitmap ui\images\warehouse.bitmap
@@ -212,6 +212,10 @@ opencachefile "../H3MCCMaps/s3d_waterfall.map"
 # Port Waterfall
 porttag !ms30 *.scnr
 exit
+opencachefile "../H3MCCMaps/village.map"
+# Port Waterfall
+porttag !ms30 *.scnr
+exit
 edittag levels\multi\guardian\guardian.scenario
 copyforgepalette levels\multi\construct\construct.scenario
 copyforgepalette levels\multi\isolation\isolation.scenario
@@ -230,10 +234,9 @@ copyforgepalette levels\dlc\sidewinder\sidewinder.scenario
 copyforgepalette levels\dlc\spacecamp\spacecamp.scenario
 copyforgepalette levels\dlc\warehouse\warehouse.scenario
 copyforgepalette levels\multi\s3d_waterfall\s3d_waterfall.scenario
+copyforgepalette levels\multi\village\village.scenario
 exit
 
-updatemapfilesalt "../H3MCCMaps/info"
-updatemapfilesalt "../H3MythicMaps/info"
-updatemapfilesalt "../H3Maps/info"
+updatemapfilesalt "../info"
 
 dumplog ED_Enhanced_log.txt
