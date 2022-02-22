@@ -237,6 +237,51 @@ copyforgepalette levels\multi\s3d_waterfall\s3d_waterfall.scenario
 copyforgepalette levels\multi\village\village.scenario
 exit
 
+edittag levels\multi\village\village.scenario
+setfield mapid 900
+savetagchanges
+exit
+
+edittag 0x5c4a.render_model
+setfield materials[4].rendermethod null
+savetagchanges
+exit
+
+edittag objects\block\cobble\well\well.render_model
+setfield materials[1].rendermethod null
+savetagchanges
+exit
+
+edittag 0x5c47.render_model
+setfield materials[0].rendermethod null
+savetagchanges
+exit
+
+edittag 0x5c44.render_model
+setfield materials[0].rendermethod null
+savetagchanges
+exit
+
+edittag objects\block\flower\dandelion\dandelion.render_model
+setfield materials[1].rendermethod null
+savetagchanges
+exit
+
+edittag objects\block\flower\poppy\poppy.render_model
+setfield materials[1].rendermethod null
+savetagchanges
+exit
+
+edittag 0x5c08.render_model
+setfield materials[1].rendermethod null
+savetagchanges
+exit
+
+edittag 0x5c13.render_model
+setfield materials[1].rendermethod null
+savetagchanges
+exit
+
 updatemapfilesalt "../info"
 
 dumplog ED_Enhanced_log.txt
