@@ -208,14 +208,15 @@ exit
 opencachefile "../H3MythicMaps/warehouse.map"
 porttag !ms30 *.scnr
 exit
-opencachefile "../H3MCCMaps/s3d_waterfall.map"
 # Port Waterfall
+opencachefile "../H3MCCMaps/s3d_waterfall.map"
 porttag !ms30 *.scnr
 exit
-opencachefile "../H3MCCMaps/village.map"
 # Port Village
+opencachefile "../H3MCCMaps/village.map"
 porttag !ms30 *.scnr
 exit
+
 edittag levels\multi\guardian\guardian.scenario
 copyforgepalette levels\multi\construct\construct.scenario
 copyforgepalette levels\multi\isolation\isolation.scenario
