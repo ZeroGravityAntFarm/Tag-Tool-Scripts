@@ -243,7 +243,7 @@ setfield mapid 900
 savetagchanges
 exit
 
-edittag 0x5c4a.render_model
+edittag 0x83bf.render_model
 setfield materials[4].rendermethod null
 savetagchanges
 exit
@@ -253,12 +253,12 @@ setfield materials[1].rendermethod null
 savetagchanges
 exit
 
-edittag 0x5c47.render_model
+edittag 0x83bc.render_model
 setfield materials[0].rendermethod null
 savetagchanges
 exit
 
-edittag 0x5c44.render_model
+edittag 0x83b9.render_model
 setfield materials[0].rendermethod null
 savetagchanges
 exit
@@ -273,12 +273,12 @@ setfield materials[1].rendermethod null
 savetagchanges
 exit
 
-edittag 0x5c08.render_model
+edittag 0x837d.render_model
 setfield materials[1].rendermethod null
 savetagchanges
 exit
 
-edittag 0x5c13.render_model
+edittag 0x8388.render_model
 setfield materials[1].rendermethod null
 savetagchanges
 exit
