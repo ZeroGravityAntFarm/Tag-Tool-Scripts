@@ -213,7 +213,7 @@ opencachefile "../H3MCCMaps/s3d_waterfall.map"
 porttag !ms30 *.scnr
 exit
 opencachefile "../H3MCCMaps/village.map"
-# Port Waterfall
+# Port Village
 porttag !ms30 *.scnr
 exit
 edittag levels\multi\guardian\guardian.scenario
