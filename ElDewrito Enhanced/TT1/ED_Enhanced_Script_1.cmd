@@ -283,6 +283,11 @@ setfield materials[1].rendermethod null
 savetagchanges
 exit
 
+edittag levels\multi\s3d_waterfall\s3d_waterfall.scenario
+removeblockelements weaponpalette 5 1
+savetagchanges
+exit
+
 updatemapfilesalt "../info"
 
 dumplog ED_Enhanced_log.txt
