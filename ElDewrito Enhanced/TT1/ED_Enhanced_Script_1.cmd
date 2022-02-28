@@ -208,14 +208,15 @@ exit
 opencachefile "../H3MythicMaps/warehouse.map"
 porttag !ms30 *.scnr
 exit
+# Port Waterfall
 opencachefile "../H3MCCMaps/s3d_waterfall.map"
-# Port Waterfall
 porttag !ms30 *.scnr
 exit
+# Port Village
 opencachefile "../H3MCCMaps/village.map"
-# Port Waterfall
 porttag !ms30 *.scnr
 exit
+
 edittag levels\multi\guardian\guardian.scenario
 copyforgepalette levels\multi\construct\construct.scenario
 copyforgepalette levels\multi\isolation\isolation.scenario
@@ -235,6 +236,56 @@ copyforgepalette levels\dlc\spacecamp\spacecamp.scenario
 copyforgepalette levels\dlc\warehouse\warehouse.scenario
 copyforgepalette levels\multi\s3d_waterfall\s3d_waterfall.scenario
 copyforgepalette levels\multi\village\village.scenario
+exit
+
+edittag levels\multi\village\village.scenario
+setfield mapid 900
+savetagchanges
+exit
+
+edittag 0x83bf.render_model
+setfield materials[4].rendermethod null
+savetagchanges
+exit
+
+edittag objects\block\cobble\well\well.render_model
+setfield materials[1].rendermethod null
+savetagchanges
+exit
+
+edittag 0x83bc.render_model
+setfield materials[0].rendermethod null
+savetagchanges
+exit
+
+edittag 0x83b9.render_model
+setfield materials[0].rendermethod null
+savetagchanges
+exit
+
+edittag objects\block\flower\dandelion\dandelion.render_model
+setfield materials[1].rendermethod null
+savetagchanges
+exit
+
+edittag objects\block\flower\poppy\poppy.render_model
+setfield materials[1].rendermethod null
+savetagchanges
+exit
+
+edittag 0x837d.render_model
+setfield materials[1].rendermethod null
+savetagchanges
+exit
+
+edittag 0x8388.render_model
+setfield materials[1].rendermethod null
+savetagchanges
+exit
+
+edittag levels\multi\s3d_waterfall\s3d_waterfall.scenario
+removeblockelements weaponpalette 5 1
+savetagchanges
 exit
 
 updatemapfilesalt "../info"
