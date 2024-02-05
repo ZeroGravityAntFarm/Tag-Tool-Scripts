@@ -440,19 +440,19 @@ function setButtons(){
     });
 }
 
-var bipedRotate = 270;
+var bipedRotate = 68.501480;
 dew.on('show', function(e){
     $('#settingsWindow').hide();
     $('#blueHeader, #blueFooter,#blackLayer').hide();
     $('.armorForm, .colorForm, .emblemForm, .emblemColorForm').hide();
     $('#infoHeader, #infoText').text('');
     $('#infoBox').hide();
-    bipedRotate = 270;
+    bipedRotate = 68.501480;
     dew.getSessionInfo().then(function(i){
         if(i.mapName == "mainmenu"){
             $('#blackLayer').fadeIn(200, function() {
                 dew.command('Player.Armor.Update');
-                dew.command('Player.Armor.SetUiModelRotation 270');
+                dew.command('Player.Armor.SetUiModelRotation 68.501480');
                 dew.command('game.hideh3ui 1');
                 dew.command('Game.ScenarioScript settings_cam');
                 dew.command('Game.ScreenEffectRange 0 0');
@@ -579,7 +579,7 @@ function effectReset(){
             $('#blackLayer').fadeIn(200, function(){
                 dew.command('Game.ScenarioScript leave_settings');
                 dew.command('Game.ScreenEffectRange 0 1E+19');
-                dew.command('Player.Armor.SetUiModelRotation 270');
+                dew.command('Player.Armor.SetUiModelRotation 68.501480');
                 dew.command('game.hideh3ui 0');
                 $('#settingsWindow').hide();
                 $('#blueHeader').hide();
@@ -907,9 +907,9 @@ function getAspectRatio(){
 
 function adjustBiped(){
     if(getAspectRatio() == '4:3' || getAspectRatio() == '5:4' ){
-        dew.command('Player.Armor.SetUiModelPosition 74.058 -101.826 11.65'); //moved to the left
+        dew.command('Player.Armor.SetUiModelPosition 80.401 -146.560 0.84'); //moved to the left
     }else{
-        dew.command('Player.Armor.SetUiModelPosition 74.108 -101.926 11.65'); //default
+        dew.command('Player.Armor.SetUiModelPosition 80.351 -146.460 0.84'); //default
     }    
 }
 
