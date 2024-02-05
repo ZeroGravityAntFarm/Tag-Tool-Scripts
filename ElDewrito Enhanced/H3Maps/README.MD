@@ -1,1 +1,0 @@
-Put your Halo 3 360 maps in here.
