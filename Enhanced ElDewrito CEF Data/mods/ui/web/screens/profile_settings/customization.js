@@ -908,6 +908,8 @@ function getAspectRatio(){
 function adjustBiped(){
     if(getAspectRatio() == '4:3' || getAspectRatio() == '5:4' ){
         dew.command('Player.Armor.SetUiModelPosition 80.401 -146.560 0.84'); //moved to the left
+    }else if(getAspectRatio() == '8:5'){
+        dew.command('Player.Armor.SetUiModelPosition 80.356 -146.490 0.84'); //moved slightly to the left
     }else{
         dew.command('Player.Armor.SetUiModelPosition 80.351 -146.460 0.84'); //default
     }    
