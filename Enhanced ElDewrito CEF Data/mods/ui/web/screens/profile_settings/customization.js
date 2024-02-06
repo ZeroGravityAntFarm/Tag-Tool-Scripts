@@ -453,8 +453,8 @@ dew.on('show', function(e){
             $('#blackLayer').fadeIn(200, function() {
                 dew.command('Player.Armor.Update');
                 dew.command('Player.Armor.SetUiModelRotation 68.501480');
-                dew.command('game.hideh3ui 1');
                 dew.command('Game.ScenarioScript settings_cam');
+                dew.command('game.hideh3ui 1');
                 dew.command('Game.ScreenEffectRange 0 0');
                 $('#settingsWindow').show();
                 $('#blueHeader, #blueFooter, #blackLayer').show();
